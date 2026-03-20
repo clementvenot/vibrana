@@ -1,9 +1,15 @@
 <resources>
     <string name="app_name">Vibrana</string>
 
+    //Strings for home
     <string name="HomeTxtWelcome">Welcome on</string>
     <string name="HomeBtnGuitar">To tune a guitar</string>
     <string name="HomeBtnPiano">To play piano</string>
     <string name="HomeBtnRecord">To record audio</string>
+
+    //Strings for toolbar
+    <string name="content_music">Music</string>
+    <string name="content_save">Save</string>
+    <string name="content_home">Home</string>
 
 </resources>

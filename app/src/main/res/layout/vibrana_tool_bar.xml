@@ -7,26 +7,30 @@
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/topAppBar"
         android:layout_width="0dp"
-        android:layout_height="56dp"
+        android:layout_height="70dp"
         android:background="#8EC3E6"
-        app:layout_constraintTop_toTopOf="parent"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
             android:orientation="horizontal"
-            android:padding="8dp">
+            android:padding="10dp">
 
             <ImageView
                 android:id="@+id/btnHome"
                 android:layout_width="32dp"
                 android:layout_height="32dp"
-                android:src="@drawable/homeicon"
-                android:padding="4dp"
-                android:contentDescription="Home" />
+                android:contentDescription="@string/content_home"
+                android:padding="0dp"
+                android:src="@drawable/ic_home" />
 
             <Space
                 android:layout_width="0dp"
@@ -37,9 +41,9 @@
                 android:id="@+id/btnMusic"
                 android:layout_width="32dp"
                 android:layout_height="32dp"
-                android:src="@drawable/musicicon"
-                android:padding="4dp"
-                android:contentDescription="Music" />
+                android:contentDescription="@string/content_music"
+                android:padding="0dp"
+                android:src="@drawable/ic_music" />
 
             <Space
                 android:layout_width="0dp"
@@ -50,9 +54,9 @@
                 android:id="@+id/btnSave"
                 android:layout_width="32dp"
                 android:layout_height="32dp"
-                android:src="@drawable/saveicon"
-                android:padding="4dp"
-                android:contentDescription="Save" />
+                android:contentDescription="@string/content_save"
+                android:padding="0dp"
+                android:src="@drawable/ic_save" />
 
         </LinearLayout>
 
