@@ -12,4 +12,10 @@
     <string name="content_save">Save</string>
     <string name="content_home">Home</string>
 
+    //Strings for record activity
+    <string name="record_name">Record Audio</string>
+    <string name="hint_title_record">Record name here...</string>
+    <string name="record_chronometer">00'00</string>
+
+
 </resources>

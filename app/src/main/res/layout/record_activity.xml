@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <!-- TOOLBAR -->
+    <include
+        android:id="@+id/includeToolbar"
+        layout="@layout/vibrana_tool_bar" />
+
+    <!-- BODY RECORD AUDIO -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/titleRecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/record_name"
+            android:textAlignment="center"
+            android:textSize="55sp"
+            android:textStyle="bold"
+            android:textColor="#D56769"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#EEEEEE">
+
+            <EditText
+                android:id="@+id/titleInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_title_record"
+                android:padding="10dp"
+                android:background="@android:color/transparent" />
+
+            <!-- Bordure en bas -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#000000" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:background="#D56769" />
+
+        <!-- CardView pour bordure tout autour du visualiseur -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            app:cardBackgroundColor="#EDEDED"
+            app:cardCornerRadius="0dp"
+            app:cardElevation="0dp"
+            app:strokeColor="#000000"
+            app:strokeWidth="2dp">
+
+            <com.example.vibrana.SoundVisualizerView
+                android:id="@+id/visualizer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/timerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/record_chronometer"
+            android:textSize="55sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textColor="#D56769"
+            android:layout_marginTop="20dp" />
+
+        <ImageButton
+            android:id="@+id/recordButton"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_record" />
+
+    </LinearLayout>
+</LinearLayout>
