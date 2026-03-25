@@ -1,20 +1,26 @@
 <resources>
     <string name="app_name">Vibrana</string>
 
-    //Strings for home
+    <!-- Strings for home -->
     <string name="HomeTxtWelcome">Welcome on</string>
     <string name="HomeBtnGuitar">To tune a guitar</string>
     <string name="HomeBtnPiano">To play piano</string>
     <string name="HomeBtnRecord">To record audio</string>
 
-    //Strings for toolbar
+    <!-- Strings for toolbar -->
     <string name="content_music">Music</string>
     <string name="content_save">Save</string>
     <string name="content_home">Home</string>
 
-    //Strings for record activity
+    <!-- Strings for record activity -->
     <string name="record_name">Record Audio</string>
-    <string name="hint_title_record">Record name here...</string>
+    <string name="hint_title_record">Record name here…</string>
     <string name="record_chronometer">00\'00</string>
+
+    <!-- Strings for audio saves -->
+    <string name="delete">Delete</string>
+    <string name="play_pause">Play/Pause</string>
+    <string name="title_my_recordings">My recordings</string>
+    <string name="title_name_example">Title</string>
 
 </resources>
