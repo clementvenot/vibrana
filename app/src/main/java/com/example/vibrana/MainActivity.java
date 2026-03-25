@@ -27,5 +27,10 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(MainActivity.this, RecordActivity.class);
             startActivity(intent);
         });
+
+        findViewById(R.id.btnSave).setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, AudioSavesActivity.class);
+            startActivity(intent);
+        });
     }
 }
