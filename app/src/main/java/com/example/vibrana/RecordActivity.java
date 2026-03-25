@@ -1,6 +1,7 @@
 package com.example.vibrana;
 
 import android.Manifest;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.media.MediaRecorder;
@@ -74,6 +75,12 @@ public class RecordActivity extends AppCompatActivity {
         // Gestion du bouton Home dans la toolbar
         findViewById(R.id.btnHome).setOnClickListener(v -> {
             finish(); // Ferme cette activité pour revenir à l'écran précédent
+        });
+
+        // Gestion du bouton Save dans la toolbar
+        findViewById(R.id.btnSave).setOnClickListener(v -> {
+            Intent intent = new Intent(RecordActivity.this, AudioSavesActivity.class);
+            startActivity(intent);
         });
     }
 
