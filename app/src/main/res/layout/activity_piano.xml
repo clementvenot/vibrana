@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:ignore="HardcodedText">
+
+    <!-- Titre en haut -->
+    <TextView
+        android:id="@+id/tv_play_piano"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Play piano"
+        android:textColor="#4B2C85"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Icône Home  -->
+    <ImageView
+        android:id="@+id/btn_home"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:contentDescription="Home"
+        android:src="@drawable/ic_home"
+        app:layout_constraintBottom_toBottomOf="@id/tv_play_piano"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_play_piano"
+        app:tint="#4B2C85" />
+
+    <!-- Conteneur du piano -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/piano_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_play_piano">
+
+        <!-- Guidelines pour alignement parfait entre les touches blanches -->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guide_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.1428" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guide_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.2857" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guide_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5714" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guide_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.7142" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guide_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.8571" />
+
+        <!-- Touches blanches -->
+        <LinearLayout
+            android:id="@+id/white_keys"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/key_white_1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/white_key_background"
+                android:clickable="true"
+                android:focusable="true" />
+            <View
+                android:id="@+id/key_white_2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/white_key_background"
+                android:clickable="true"
+                android:focusable="true" />
+            <View
+                android:id="@+id/key_white_3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/white_key_background"
+                android:clickable="true"
+                android:focusable="true" />
+            <View
+                android:id="@+id/key_white_4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/white_key_background"
+                android:clickable="true"
+                android:focusable="true" />
+            <View
+                android:id="@+id/key_white_5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/white_key_background"
+                android:clickable="true"
+                android:focusable="true" />
+            <View
+                android:id="@+id/key_white_6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/white_key_background"
+                android:clickable="true"
+                android:focusable="true" />
+            <View
+                android:id="@+id/key_white_7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/white_key_background"
+                android:clickable="true"
+                android:focusable="true" />
+        </LinearLayout>
+
+        <!-- Touches noires centrées sur les Guidelines -->
+        <View
+            android:id="@+id/key_black_1"
+            android:layout_width="45dp"
+            android:layout_height="0dp"
+            android:background="@drawable/black_key_background"
+            app:layout_constraintHeight_percent="0.6"
+            app:layout_constraintStart_toStartOf="@id/guide_1"
+            app:layout_constraintEnd_toEndOf="@id/guide_1"
+            app:layout_constraintTop_toTopOf="parent"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <View
+            android:id="@+id/key_black_2"
+            android:layout_width="45dp"
+            android:layout_height="0dp"
+            android:background="@drawable/black_key_background"
+            app:layout_constraintHeight_percent="0.6"
+            app:layout_constraintStart_toStartOf="@id/guide_2"
+            app:layout_constraintEnd_toEndOf="@id/guide_2"
+            app:layout_constraintTop_toTopOf="parent"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <View
+            android:id="@+id/key_black_3"
+            android:layout_width="45dp"
+            android:layout_height="0dp"
+            android:background="@drawable/black_key_background"
+            app:layout_constraintHeight_percent="0.6"
+            app:layout_constraintStart_toStartOf="@id/guide_4"
+            app:layout_constraintEnd_toEndOf="@id/guide_4"
+            app:layout_constraintTop_toTopOf="parent"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <View
+            android:id="@+id/key_black_4"
+            android:layout_width="45dp"
+            android:layout_height="0dp"
+            android:background="@drawable/black_key_background"
+            app:layout_constraintHeight_percent="0.6"
+            app:layout_constraintStart_toStartOf="@id/guide_5"
+            app:layout_constraintEnd_toEndOf="@id/guide_5"
+            app:layout_constraintTop_toTopOf="parent"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <View
+            android:id="@+id/key_black_5"
+            android:layout_width="45dp"
+            android:layout_height="0dp"
+            android:background="@drawable/black_key_background"
+            app:layout_constraintHeight_percent="0.6"
+            app:layout_constraintStart_toStartOf="@id/guide_6"
+            app:layout_constraintEnd_toEndOf="@id/guide_6"
+            app:layout_constraintTop_toTopOf="parent"
+            android:clickable="true"
+            android:focusable="true" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
