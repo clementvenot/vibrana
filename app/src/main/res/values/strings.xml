@@ -23,4 +23,7 @@
     <string name="title_my_recordings">My recordings</string>
     <string name="title_name_example">Title</string>
 
+    <!-- Strings for piano -->
+    <string name="piano_title">PLAY PIANO</string>
+
 </resources>
