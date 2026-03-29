@@ -26,4 +26,17 @@
     <!-- Strings for piano -->
     <string name="piano_title">PLAY PIANO</string>
 
+    <!-- Strings for Tune Guitar -->
+    <string name="tune_guitar_title">Tune Guitar</string>
+    <string name="tune_guitar_manual">Manual</string>
+    <string name="tune_guitar_auto">Auto</string>
+    <string name="tune_guitar_plus_or_minus">+</string>
+    <string name="tune_guitar_hz">30Hz</string>
+    <string name="tune_guitar_note_e_high">E</string>
+    <string name="tune_guitar_note_b">B</string>
+    <string name="tune_guitar_note_g">G</string>
+    <string name="tune_guitar_note_d">D</string>
+    <string name="tune_guitar_note_a">A</string>
+    <string name="tune_guitar_note_e_low">E</string>
+
 </resources>

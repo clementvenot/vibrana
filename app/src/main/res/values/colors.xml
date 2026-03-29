@@ -2,4 +2,8 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="green_primary">#98C98C</color>
+    <color name="green_light">#B8E0B0</color>
+    <color name="pointer_blue">#A0C0E0</color>
+    <color name="string_red">#FF4C4C</color>
 </resources>
