@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.home);
+        super.setContentView(R.layout.home);
         
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
@@ -23,15 +23,23 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
+        findViewById(R.id.btnGuitar).setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, TuneGuitarActivity.class);
+            startActivity(intent);
+        });
+
         findViewById(R.id.btnRecord).setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, RecordActivity.class);
             startActivity(intent);
         });
 
-        findViewById(R.id.btnSave).setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, AudioSavesActivity.class);
-            startActivity(intent);
-        });
+        // Configurer les boutons de la nav bar s'ils sont présents dans home.xml via include
+        if (findViewById(R.id.btnSave) != null) {
+            findViewById(R.id.btnSave).setOnClickListener(v -> {
+                Intent intent = new Intent(MainActivity.this, AudioSavesActivity.class);
+                startActivity(intent);
+            });
+        }
 
         findViewById(R.id.btnPiano).setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, PianoActivity.class);
