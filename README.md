@@ -2,6 +2,20 @@
 
 # Vibrana 🎸🎹🎙️
 
+![Android](https://img.shields.io/badge/Android%207.0%2B-3DDC84?style=for-the-badge&logo=android&logoColor=white)
+![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)
+![Java](https://img.shields.io/badge/Java%2017-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![AudioRecord](https://img.shields.io/badge/AudioRecord-000000?style=for-the-badge&logo=android&logoColor=white)
+![SoundPool](https://img.shields.io/badge/SoundPool-1E88E5?style=for-the-badge&logo=music&logoColor=white)
+![Signal Processing](https://img.shields.io/badge/Signal%20Processing-AE00FF?style=for-the-badge&logo=waveform&logoColor=white)
+![Autocorrelation](https://img.shields.io/badge/Autocorrelation%20Engine-6200EA?style=for-the-badge&logo=wave&logoColor=white)
+![Material Design](https://img.shields.io/badge/Material%20Design%203-757575?style=for-the-badge&logo=materialdesign&logoColor=white)
+![Custom Canvas](https://img.shields.io/badge/Custom%20Canvas-FF6F00?style=for-the-badge&logo=androidstudio&logoColor=white)
+![AAC Recording](https://img.shields.io/badge/AAC%2044.1kHz%20%2F%20128kbps-FF0000?style=for-the-badge&logo=soundcloud&logoColor=white)
+![Low Latency](https://img.shields.io/badge/Low%20Latency-2962FF?style=for-the-badge&logo=speedtest&logoColor=white)
+![Gradle](https://img.shields.io/badge/Gradle-02303A?style=for-the-badge&logo=gradle&logoColor=white)
+![License](https://img.shields.io/badge/License-UNLICENSED-green?style=for-the-badge)
+
 **Vibrana** is a high‑performance digital toolbox for musicians. Built to deliver professional‑grade precision in a mobile format, the app combines real‑time signal processing, high‑fidelity recording, and low‑latency sound synthesis.
 
 ***
@@ -84,3 +98,15 @@ Vibrana respects your privacy:
 *   No audio data is ever sent to external servers. All processing and storage occur **locally** on your device.
 
 ***
+
+## 📜 License
+
+There is no license; you're free to use it.
+
+---
+
+Feel free to contribute to this project by submitting issues or pull requests.
+
+For any questions or support, please contact [Clément Venot](mailto:clement.venooot@gmail.com).
+
+---
